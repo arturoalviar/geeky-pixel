@@ -32,6 +32,15 @@
   }
 }
 
+.site-header-fixed{
+  background: #3d474f;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .logo{
   display: block;
   width: 4rem;
@@ -39,8 +48,13 @@
 }
 
 .main{
+  //@include animate(.2s);
   position: relative;
   z-index: 1;
+}
+
+.main-top-margin{
+  margin-top: 7rem;
 }
 
 
@@ -52,7 +66,7 @@
   background: $banner url(../img/banner.jpg) 50% 50% no-repeat;
   background-size: cover;
   color: $white;
-  z-index: 100;
+  z-index: -1;
 
   &:after{
     position:absolute;
