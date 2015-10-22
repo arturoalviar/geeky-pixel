@@ -13,9 +13,7 @@
         $this.val() ? $this.addClass('active-label') : $this.removeClass('active-label');
     });
 
-    console.log($bannerHeight);
-
-    $(window).on('scroll' , {"prevScroll": 0 },function(){
+    $(window).on('scroll' ,function(){
       var $currScroll = $(window).scrollTop();
       if($currScroll > $bannerHeight){
           $header.addClass('site-header-fixed');
@@ -26,7 +24,6 @@
         $header.removeClass('site-header-fixed');
         $main.removeClass('main-top-margin');
       }
-      this.prevScroll = $currScroll;
     });
 
 }($);
