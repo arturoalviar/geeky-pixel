@@ -6,56 +6,92 @@
     %title Geeky Pixel
     %meta(name="viewport" content="width=device-width, initial-scale=1")
     %meta(name="description" content="")
+    %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo|Lato:300,400,700")
+    %link(rel="stylesheet" href="css/main.css")
+  %body
+    %section.banner
+      %h1.banner-header Geeky Pixel Design
+      %h2.banner-sub-header Every pixel matters
+    .main
+      %header.site-header
+        .container.flexbox
+          %a(href="#")
+            %h1 Geeky Pixel
+          %nav.nav(role-="nav")
+            %ul
+              %a(href="#")
+                %li About
+              %a(href="#")
+                %li Work
+              %a(href="#")
+                %li Contact
+      %section#about.about.slide.light-slide
+        %h2.sub-header.center.upcase Geeky Pixel = Awesome Sites
+        .container-smallest
+          %p Hella wayfarers mlkshk, migas lomo Pitchfork synth Helvetica locavore yr pickled art party cornhole jean shorts. Pour-over quinoa literally food truck, Odd Future XOXO beard.
+      %section#about.about.slide.light-slide
+        %h2.sub-header.center.upcase What We Offer
+        .container.slide-content
+          .row.flexbox-align-top
+            .col-3
+              %h3.smaller-header.upcase Pitchfork
+              %p Hella wayfarers mlkshk, migas lomo Pitchfork synth Helvetica locavore
+            .col-3
+              %h3.smaller-header.upcase Scenester
+              %p Helvetica locavore yr pickled art party cornhole jean shorts
+            .col-3
+              %h3.smaller-header.upcase Thundercats
+              %p Kogi skateboard synth 8-bit, keytar bitters sartorial post-ironic letterpress
 
-%body
-  %section.banner
-    %h1.banner-header Geeky Pixel Design
-    %h2.banner-sub-header
+      %section#work.work.slide.sub-color-slide
+        .container.slide-content
+          %h1.big-header.center Our Work
+          .row.flexbox-align-top
+            .card
+              .card-img
+                %img(src="img/card.jpg")
+              .inner-card
+                %h2.card-header Readymade
+                .card-content
+                  %p Helvetica locavore yr pickled art party cornhole jean
+                .card-links
+                  %a.inline-btn(href="#") Check it out!
+            .card
+              .card-img
+                %img(src="img/card.jpg")
+              .inner-card
+                %h2.card-header Lumbersexual
+                .card-content
+                  %p Umami scenester letterpress, Pinterest plaid kale chips photo booth
+                .card-links
+                  %a.inline-btn(href="#") Check it out!
+            .card
+              .card-img
+                %img(src="img/card.jpg")
+              .inner-card
+                %h2.card-header Stumptown
+                .card-content
+                  %p Odd Future meggings cardigan Thundercats typewriter organic meh
+                .card-links
+                  %a.inline-btn(href="#") Check it out!
+      %section.contact.slide.light-slide
+        .container-small
+          %h1.big-header.center Contact
+          %h2.card-header.center Have a request?
+          %form.container-smallest
+            .group
+              %input.input(name="name" type="text" required)
+              %span.input-underline
+              %label.label Name
+            .group
+              %input.input(name="name" type="email" required).input
+              %span.input-underline
+              %label.label E-mail
+            .group
+              %textarea.input
+              %label.label Your Awesome Message
+              %span.input-underline
+            %input.btn.raised-btn(type="submit" value="Send")
 
-  .main
-    %section.about.slide.light-slide
-      .container-small
-        .card
-          .inner-card
-            %h1.big-header About
-            %p
-
-    %section.work.slide.sub-color-slide
-      .container.slide-content
-        %h1.big-header.center Our Work
-        .cards.flexbox
-          .card
-            .card-img
-              %img(src="img/card.jpg")
-            .inner-card
-              %h2 Heading
-              .card-content
-                %p Description
-              .card-links
-                %a.inline-link Link
-          .card
-            .card-img
-              %img(src="img/card.jpg")
-            .inner-card
-              %h2 Heading
-              .card-content
-                %p Description
-              .card-links
-                %a.inline-link Link
-          .card
-            .card-img
-              %img(src="img/card.jpg")
-            .inner-card
-              %h2 Heading
-              .card-content
-                %p Description
-              .card-links
-                %a.inline-link Link
-  %section.contact.slide.light-slide
-    .container-small
-      .card
-        .inner-card
-          %h1.big-header Get A Quote
-
-  %footer.footer
-    %p Geeky Pixel 2015.
+      %footer.footer
+        %p Geeky Pixel 2015.

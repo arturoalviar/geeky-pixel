@@ -1,0 +1,104 @@
+.group{
+  position:relative;
+  margin: 0 auto $spacing-unit*1.5;
+  border-bottom: 1px solid $main-color;
+
+}
+
+.input{
+  position:relative;
+  display:block;
+  width: 100%;
+  text-align: center;
+  padding: $spacing-unit/2;
+  margin: $margin-center;
+  border: 0;
+  color: $main-color;
+  font-size: 1.115rem;
+  line-height: 1.5rem;
+  @include animate();
+  &:focus{
+    outline: 0;
+  }
+
+}
+
+.label{
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  left: $spacing-unit;
+  opacity: .7;
+  pointer-events: none;
+  @include animate();
+}
+
+
+textarea {
+  height: 50px;
+  resize:vertical;
+  &:focus{
+    height: 150px;
+  }
+}
+
+.input-underline{
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: $margin-center;
+
+
+  &:before,
+  &:after{
+      position: absolute;
+      content: '';
+      bottom: -1px;
+      height: 2px;
+      width: 0;
+      background: $main-color;
+      @include animate();
+    }
+
+  &:before{
+    left: 50%;
+  }
+
+  &:after{
+    right: 50%;
+  }
+
+}
+
+.input:focus ~ .label, .input.active-label ~ .label{
+  top: -$spacing-unit;
+  left: -$spacing-unit*1.5;
+  color: $second-color;
+  @include scale(.75);
+}
+
+
+.input:focus ~ .input-underline:before,
+.input:focus ~ .input-underline:after{
+  width: 50%;
+}
+
+.submit{
+  background: $main-color;
+  color: $white;
+  width: 100%;
+  padding: 1rem $spacing-unit;
+  display:block;
+  margin: $spacing-unit auto;
+  border: 0;
+  outline: 0;
+  box-shadow: $material-box-shadow;
+  cursor: pointer;
+  @include animate();
+
+  &:hover,
+  &:focus{
+    background: $second-color;
+    box-shadow: $material-box-shadow-hover;
+  }
+}

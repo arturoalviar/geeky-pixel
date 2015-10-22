@@ -1,1 +1,73 @@
+[class$=header]{
+  font-family: $header-font;
+}
 
+.banner-header{
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.banner-sub-header{
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.big-header, .sub-header, .card-header, .smaller-header{
+  color: $header-text-color;
+}
+
+
+.big-header{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.sub-header{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.smaller-header{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.upcase{
+  text-transform: uppercase;
+}
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+
+.sub-color-slide{
+  .big-header{
+    color: $white;
+  }
+}
+
+.card-header{
+  font-weight: 700;
+}
+
+.container, .container-small, .container-smallest{
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-family: $body-font;
+    color: $body-text-color;
+  }
+}
+
+
+.card{
+  p{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}

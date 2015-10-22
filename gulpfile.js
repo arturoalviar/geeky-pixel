@@ -13,7 +13,7 @@ gulp.task('sassy', function(){
 });
 
 gulp.task('minify', ['sassy'] , function(){
-  return gulp.src('./css/style.css')
+  return gulp.src('./css/main.css')
     .pipe(cssMin())
     .pipe(gulp.dest('./css'));
 });

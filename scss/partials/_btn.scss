@@ -1,0 +1,28 @@
+@mixin make-btn($display, $color : $btn-text){
+  display: $display;
+  font-family: $header-font;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $color;
+}
+
+.btn{
+  outline: 0;
+  background: none;
+  border: 0;
+}
+
+.inline-btn{
+  @include make-btn(inline-block, $main-color);
+  padding: $spacing-unit/2 $spacing-unit/2 $spacing-unit/10 0;
+  margin-right: $spacing-unit/3;
+  border-bottom: 1px dotted $inline-btn;
+}
+
+.raised-btn{
+  @include make-btn(inline-block);
+  background: $btn;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: $material-box-shadow;
+}

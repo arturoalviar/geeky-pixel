@@ -1,1 +1,23 @@
+$dark-grey:             #3d474f;
+$grey:                  #F1F1F1;
+$black:                 #212121;
+$white:                 #F5F5F5;
+$true-white:            #FFFFFF;
+$off-white:             #FAF7E7;
 
+$main-color:            #f1515a;
+$second-color:          $main-color;
+
+$banner: $main-color;
+$nav: $dark-grey;
+$color-slide: $second-color;
+$card: $true-white;
+
+$inline-btn: $main-color;
+$btn: $main-color;
+$btn-text: $white;
+
+$header-text-color: lighten($dark-grey, 5%);
+$body-text-color: lighten($dark-grey, 10%);
+
+$footer: $dark-grey;
