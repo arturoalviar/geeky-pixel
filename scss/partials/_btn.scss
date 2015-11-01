@@ -25,4 +25,11 @@
   padding: 1rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: $material-box-shadow;
+  cursor: pointer;
+  @include animate();
+  &:hover,
+  &:focus{
+    background: $second-color;
+    box-shadow: $material-box-shadow-hover;
+  }
 }

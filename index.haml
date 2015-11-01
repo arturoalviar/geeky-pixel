@@ -15,16 +15,16 @@
     .main
       %header.site-header
         .container.flexbox
-          %a(href="#")
+          %a.hidden-mobile(href="#")
             %h1 Geeky Pixel
           %nav.nav(role-="nav")
             %ul
               %a(href="#")
-                %li About
+                %li.center About
               %a(href="#")
-                %li Work
+                %li.center Work
               %a(href="#")
-                %li Contact
+                %li.center Contact
       %section#about.about.slide.light-slide
         %h2.sub-header.center.upcase Geeky Pixel = Awesome Sites
         .container-smallest
@@ -80,15 +80,15 @@
           %h2.card-header.center Have a request?
           %form.container-smallest
             .group
-              %input.input(name="name" type="text" required)
+              %input.input(name="Name" type="text" required)
               %span.input-underline
               %label.label Name
             .group
-              %input.input(name="name" type="email" required).input
+              %input.input(name="E-mail" type="email" required).input
               %span.input-underline
               %label.label E-mail
             .group
-              %textarea.input
+              %textarea.input(name="Message" type="text" required)
               %label.label Your Awesome Message
               %span.input-underline
             %input.btn.raised-btn(type="submit" value="Send")

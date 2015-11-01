@@ -3,3 +3,8 @@
   @import 'layout';
   @import 'footer';
 }
+
+@media all and (max-width: 600px){
+  @import 'mobile/layout';
+  @import 'mobile/nav';
+}
