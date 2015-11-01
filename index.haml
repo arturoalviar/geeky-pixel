@@ -87,15 +87,15 @@
           %h2.card-header.center Have a request?
           %form.container-smallest
             .group
-              %input.input(name="Name" type="text" required)
+              %input.input(name="Name" required="required" type="text")
               %span.input-underline
               %label.label Name
             .group
-              %input.input(name="E-mail" type="email" required)
+              %input.input(name="E-mail" required="required" type="email")
               %span.input-underline
               %label.label E-mail
             .group
-              %textarea.input(name="Message" type="text" required)
+              %textarea.input(name="Message" required="required" type="text")
               %label.label Your Awesome Message
               %span.input-underline
             %input.btn.raised-btn(type="submit" value="Send")
