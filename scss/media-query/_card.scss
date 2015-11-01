@@ -1,5 +1,5 @@
 .row{
-  .card, .col-3{
+  .card{
     @include flex(1);
     widows: calc(33% - $spacing-unit);
     margin: $spacing-unit $spacing-unit/2;

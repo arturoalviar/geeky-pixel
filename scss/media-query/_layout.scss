@@ -1,3 +1,9 @@
 .main{
   margin-bottom: $footer-padding*2+25px;
 }
+
+.col-3{
+  @include flex(1);
+  widows: calc(33% - $spacing-unit);
+  margin: $spacing-unit $spacing-unit/2;
+}

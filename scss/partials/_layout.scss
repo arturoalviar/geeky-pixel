@@ -106,5 +106,19 @@
 
 .sub-color-slide{
   background: $second-color;
+}
 
+
+.social-icons-group{
+  max-width: 400px;
+  margin: 0 auto;
+
+  a{
+    color: $white;
+  }
+
+}
+
+.icon-holder{
+  margin-bottom: $spacing-unit;
 }

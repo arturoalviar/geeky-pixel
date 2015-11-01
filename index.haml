@@ -6,6 +6,7 @@
     %title Geeky Pixel
     %meta(name="viewport" content="width=device-width, initial-scale=1")
     %meta(name="description" content="")
+    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
     %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo|Lato:300,400,700")
     %link(rel="stylesheet" href="css/main.css")
   %body
@@ -34,12 +35,18 @@
         .container.slide-content
           .row.flexbox-align-top
             .col-3
+              .icon-holder.center
+                %i.fa.fa-pencil.fa-4x
               %h3.smaller-header.upcase Pitchfork
               %p Hella wayfarers mlkshk, migas lomo Pitchfork synth Helvetica locavore
             .col-3
+              .icon-holder.center
+                %i.fa.fa-code.fa-4x
               %h3.smaller-header.upcase Scenester
               %p Helvetica locavore yr pickled art party cornhole jean shorts
             .col-3
+              .icon-holder.center
+                %i.fa.fa-thumbs-o-up.fa-4x
               %h3.smaller-header.upcase Thundercats
               %p Kogi skateboard synth 8-bit, keytar bitters sartorial post-ironic letterpress
 
@@ -94,6 +101,16 @@
             %input.btn.raised-btn(type="submit" value="Send")
 
       %footer.footer
+        .social-icons-group.flexbox
+          .col-3
+            %a(href="#")
+              %i.fa.fa-twitter
+          .col-3
+            %a(href="#")
+              %i.fa.fa-facebook
+          .col-3
+            %a(href="#")
+              %i.fa.fa-instagram
         %p Geeky Pixel 2015.
     %script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     %script(src="js/main.js")
